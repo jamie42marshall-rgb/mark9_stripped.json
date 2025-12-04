@@ -23,11 +23,11 @@ RUN comfy node install --exit-on-fail rgthree-comfy@1.0.2511270846
 
 
 # Change this to the version you want to use
-ARG api_version=1.14.0
+#ARG api_version=1.14.0
 
 # Download the comfyui-api binary, and make it executable
-ADD https://github.com/SaladTechnologies/comfyui-api/releases/download/${api_version}/comfyui-api .
-RUN chmod +x comfyui-api
+#ADD https://github.com/SaladTechnologies/comfyui-api/releases/download/${api_version}/comfyui-api .
+#RUN chmod +x comfyui-api
 
 # Set CMD to launch the comfyui-api binary. The comfyui-api binary will launch ComfyUI as a child process.
-CMD ["./comfyui-api"]
+C#MD ["./comfyui-api"]
