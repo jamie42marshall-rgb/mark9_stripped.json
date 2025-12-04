@@ -3,14 +3,14 @@ FROM runpod/worker-comfyui:5.5.0-base
 
 
 # install custom nodes into comfyui
-#jamieRUN comfy node install --exit-on-fail Comfy_KepListStuff
-#jamieRUN comfy node install --exit-on-fail comfy-easy-grids
-#jamieRUN comfy node install --exit-on-fail ComfyUi_String_Function_Tree
-#jamieRUN comfy node install --exit-on-fail comfyui-textoverlay@1.0.1
-#jamieRUN comfy node install --exit-on-fail comfyui-impact-pack@8.28.0
-#jamieRUN comfy node install --exit-on-fail RES4LYF
-#jamieRUN comfy node install --exit-on-fail comfyui_ultimatesdupscale@1.6.0
-#jamieRUN comfy node install --exit-on-fail rgthree-comfy@1.0.2511270846
+RUN comfy node install --exit-on-fail Comfy_KepListStuff
+RUN comfy node install --exit-on-fail comfy-easy-grids
+RUN comfy node install --exit-on-fail ComfyUi_String_Function_Tree
+RUN comfy node install --exit-on-fail comfyui-textoverlay@1.0.1
+RUN comfy node install --exit-on-fail comfyui-impact-pack@8.28.0
+RUN comfy node install --exit-on-fail RES4LYF
+RUN comfy node install --exit-on-fail comfyui_ultimatesdupscale@1.6.0
+RUN comfy node install --exit-on-fail rgthree-comfy@1.0.2511270846
 
 # download models into comfyui
 # RUN # Could not find URL for uncannyPhotorealism_v10.safetensors
