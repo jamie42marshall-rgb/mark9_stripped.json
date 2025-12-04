@@ -1,12 +1,4 @@
 
-echo "Worker Initiated"
-
-echo "Symlinking files from Network Volume"
-rm -rf /workspace && \
-  ln -s /runpod-volume /workspace
-
-echo "Go base worker startup"
-# clean base image containing only comfyui, comfy-cli and comfyui-manager
 FROM runpod/worker-comfyui:5.5.0-base
 
 
