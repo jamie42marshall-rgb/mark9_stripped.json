@@ -30,4 +30,4 @@ RUN comfy node install --exit-on-fail rgthree-comfy@1.0.2511270846
 #RUN chmod +x comfyui-api
 
 # Set CMD to launch the comfyui-api binary. The comfyui-api binary will launch ComfyUI as a child process.
-C#MD ["./comfyui-api"]
+#CMD ["./comfyui-api"]
