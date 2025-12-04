@@ -1,5 +1,3 @@
-echo "Worker Initiated"
+echo "start.sh is empty"
 
-echo "Symlinking files from Network Volume"
-rm -rf /workspace && \
-  ln -s /runpod-volume /workspace
+
